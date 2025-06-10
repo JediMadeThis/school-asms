@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../linkTransition/linkTransition.css" />
+  </head>
+  <body>
+    <div class="mainPg">
+      <div style="overflow: hidden">
+        <p class="time" id="time">00:00:00</p>
+        <p class="date" id="date" onclick="linkTransition('mainPg', 'adv')">
+          Monday, 1 January 2025
+        </p>
+
+        <div class="hw">
+          <h1 class="hwHead">Assignments</h1>
+
+          <table id="hwTable">
+            <tr>
+              <th>Subject</th>
+              <th>Assignment</th>
+              <th>Due</th>
+              <th>Teacher</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="transitionPh adv"></div>
+
+    <script src="script.js"></script>
+
+    <!-- <div class="transitionPh" id="transitionPh"></div> -->
+
+    <!-- Link Transition Module -->
+    <script src="../linkTransition/linkTransition.js"></script>
+  </body>
+</html>

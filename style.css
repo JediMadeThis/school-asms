@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Londrina+Sketch&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+  background-color: #222222;
+  margin: 0;
+}
+
+* {
+  font-family: 'Nunito', sans-serif;
+  color: white;
+}
+
+.time,
+.date {
+  text-align: center;
+  margin: 0;
+}
+
+.time {
+  margin-top: 50px;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.date {
+  font-size: 24px;
+}
+
+.mainPg {
+  position: fixed;
+  margin: 0;
+  top: 0;
+  right: 0;
+  background-color: #222222;
+  width: 100vw;
+  height: 100vh;
+  z-index: 98;
+}
+
+.hw {
+  margin-top: 70px;
+}
+
+.hwHead,
+.hw h2 {
+  text-align: center;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table,
+table th,
+table td {
+  border: 3px solid #88cc88;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 13px 35px;
+}
+
+table th {
+  font-size: 24px;
+  background-color: #88cc883a;
+}
+
+table td {
+  font-size: 22px;
+}
+
+.subjectTd,
+.dueTd,
+.teacherTd {
+  text-align: center;
+}
+
+.bigTd {
+  height: 50px;
+  background-color: #88cc881a;
+  font-weight: 600;
+  text-align: center;
+}
