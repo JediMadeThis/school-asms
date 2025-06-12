@@ -124,6 +124,10 @@ function setTable() {
     const date = new Date(Date.parse(processableDateFormat));
     const dateInt = date.getTime();
 
+    if (dateInt < now) {
+      return;
+    }
+
     if (hw.due[2] === year && hw.due[1] === month && hw.due[0] === day) {
       dueToday.push(hw);
     } else if (dateInt <= now + dayMs * 7) {
@@ -154,7 +158,7 @@ function setTable() {
   }
 
   if (dueThisWeek.length > 0) {
-    hwTable.appendChild(createTrBig('Due this week', 'bigTd'));
+    hwTable.appendChild(createTrBig('Due in 7 days', 'bigTd'));
 
     dueThisWeek
       // .sort((a, b) => {
@@ -281,6 +285,8 @@ function updateDateAndTime() {
   }`;
   dateElement.textContent = `${day}, ${date} ${month} ${year}`;
 }
+
+updateDateAndTime();
 
 setInterval(() => {
   updateDateAndTime();
